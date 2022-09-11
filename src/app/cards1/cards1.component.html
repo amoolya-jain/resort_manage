@@ -1,0 +1,44 @@
+<!-- Using a REST API -->
+<!-- We will be using a free service called JSONPlaceholder to retrieve JSON data and test our code. 
+We can create a function to make a GET request to retrieve users data  -->
+<!-- <button (click)="readData()">GET Users</button>
+<ul>
+    <li *ngFor="let num of var1">
+    {{num.username}} - {{num.address.city}}
+    </li>
+</ul> -->
+<!-- iterate through all the JSON data from the local JSON file sample.json -->
+<!--for(int i=0;i<7;i++)-->
+    <div class="pad">
+    <h1>Pricing</h1>
+    <div *ngFor="let item of course" style="margin-top: auto;">
+        <div class="row">
+            <!-- <div class="col-lg-3">
+                <img [src]="item.img">
+            </div> -->
+            <div class="card col-lg-12  " style="margin-top: 50px;">
+                <div class="card-body col-lg-12">
+                    <div class="row" style="border: solid;border-color: rgb(8, 8, 8);margin-top: 50px;">
+                        <div class="col-lg-3">
+                            <!-- PROPERTY BINDING -->
+                            <img [src]="item.img">
+                        </div>
+                        <div class="col-lg-9" style="margin-top: 30px;">
+                            <div class="data">
+                                {{item.name | uppercase}}
+                            </div>
+                            <div class="data">
+                                <p>{{item.description | uppercase}}</p>
+                                <hr>
+                                <p>{{item.role|uppercase}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-lg-3">
+                <img [src]="item.img">
+            </div> -->
+        </div>
+    </div>
+</div>
