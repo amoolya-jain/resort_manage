@@ -10,7 +10,9 @@ import { CardsComponent } from './cards/cards.component';
 import { TablesComponent } from './tables/tables.component';
 import { Cards1Component } from './cards1/cards1.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { RegisterComponent } from './register/register.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AdvertisementComponent } from './advertisement/advertisement.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,13 +22,16 @@ import { HttpClientModule } from '@angular/common/http';
     CardsComponent,
     TablesComponent,
     Cards1Component,
+    RegisterComponent,
+    AdvertisementComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

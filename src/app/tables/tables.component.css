@@ -1,7 +1,18 @@
 .foot{
-    padding:5%;
+    padding:2%;
 }
 
 .detail{
     text-align: left;
 }
+#footer{
+    padding:2% 15%;
+    background-color: #EFEFEF;
+    text-align: center;
+  }
+  .ico{
+  margin:auto 1% 3%;
+  }
+  h1,p{
+    color:white;
+  }

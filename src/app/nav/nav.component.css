@@ -4,7 +4,16 @@
     font-size: larger;
 }
 .navbar-brand{
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: 600;
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
+}
+.color{
+    background-color: #231955;
+    color: white;
+}
+.nav-link , .active{
+    color:white;
 }

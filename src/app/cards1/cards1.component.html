@@ -6,31 +6,37 @@ We can create a function to make a GET request to retrieve users data  -->
     <li *ngFor="let num of var1">
     {{num.username}} - {{num.address.city}}
     </li>
-</ul> -->
+</ul>  -->
 <!-- iterate through all the JSON data from the local JSON file sample.json -->
 <!--for(int i=0;i<7;i++)-->
+    <div style="background-color: #EFEFEF;">
+    Change the theme color : <input [(ngModel)]="mycolor" type="text" style="border-radius:40px;margin-top:30px;text-align: center;">
+<p [ngStyle]="{color:mycolor}" style="background-color:#EFEFEF;">You have chosen: {{mycolor}} </p>
     <div class="pad">
-    <h1>Pricing</h1>
-    <div *ngFor="let item of course" style="margin-top: auto;">
+    
+    <div *ngFor="let item of course" style="margin-top: auto; ">
         <div class="row">
             <!-- <div class="col-lg-3">
                 <img [src]="item.img">
             </div> -->
-            <div class="card col-lg-12  " style="margin-top: 50px;">
+            <div class="card col-lg-12 " style="margin-top:20px; border-radius: 5%;">
                 <div class="card-body col-lg-12">
-                    <div class="row" style="border: solid;border-color: rgb(8, 8, 8);margin-top: 50px;">
+                    <div class="row" style="border: solid;border-color: rgb(8, 8, 8); border-radius: 5%;">
                         <div class="col-lg-3">
                             <!-- PROPERTY BINDING -->
                             <img [src]="item.img">
                         </div>
                         <div class="col-lg-9" style="margin-top: 30px;">
-                            <div class="data">
+                              <div class="data" >
                                 {{item.name | uppercase}}
+                                <span [ngClass]="getClass()" (click)="showUserDetailsToggle()"></span>
                             </div>
-                            <div class="data">
+                            <div class="data" [hidden]="courseDetail" [ngStyle]="{color:mycolor}">
                                 <p>{{item.description | uppercase}}</p>
                                 <hr>
                                 <p>{{item.role|uppercase}}</p>
+                                <br>
+                                <p>Plan price: {{item.fees | currency:'INR'}}</p>
                             </div>
                         </div>
                     </div>
@@ -41,4 +47,5 @@ We can create a function to make a GET request to retrieve users data  -->
             </div> -->
         </div>
     </div>
+</div>
 </div>

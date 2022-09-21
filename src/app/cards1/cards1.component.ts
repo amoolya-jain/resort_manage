@@ -26,5 +26,23 @@ export class Cards1Component implements OnInit {
   }
   //Completed only the below
   course: any = (data as any).default;
-  
+  courseDetail = false;
+  //Event for Show and Hide
+  showUserDetailsToggle() {
+    this.courseDetail = !this.courseDetail;//!false
+    
+}
+getClass() {
+  var classList = '';
+  if (this.courseDetail) {
+    //font-awesome
+    classList = 'fa fa-plus';
+  } else {
+    classList = 'fa fa-minus';
+  }
+  return classList;
+}
+//property mycolor
+mycolor:any|undefined="Black";
+
 }
