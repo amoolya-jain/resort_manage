@@ -13,6 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { RegisterComponent } from './register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AdvertisementComponent } from './advertisement/advertisement.component';
+import { LoginComponent } from './login/login.component';
+import { ReviewComponent } from './review/review.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +26,8 @@ import { AdvertisementComponent } from './advertisement/advertisement.component'
     Cards1Component,
     RegisterComponent,
     AdvertisementComponent,
+    LoginComponent,
+    ReviewComponent,
     
   ],
   imports: [

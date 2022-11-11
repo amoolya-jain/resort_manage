@@ -11,7 +11,7 @@
     
 }
 .color{
-    background-color: #231955;
+    background-image:linear-gradient(#3B3486,#0D4C92);
     color: white;
 }
 .nav-link , .active{

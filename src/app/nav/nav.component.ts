@@ -12,7 +12,11 @@ export class NavComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    
+   
   }
-
+  onclick()
+   {
+    
+    location.href='register.component.html';
+};
 }

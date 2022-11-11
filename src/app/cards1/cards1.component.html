@@ -9,9 +9,15 @@ We can create a function to make a GET request to retrieve users data  -->
 </ul>  -->
 <!-- iterate through all the JSON data from the local JSON file sample.json -->
 <!--for(int i=0;i<7;i++)-->
-    <div style="background-color: #EFEFEF;">
-    Change the theme color : <input [(ngModel)]="mycolor" type="text" style="border-radius:40px;margin-top:30px;text-align: center;">
-<p [ngStyle]="{color:mycolor}" style="background-color:#EFEFEF;">You have chosen: {{mycolor}} </p>
+    <div id="cards1" style="background-color: #EFEFEF;">
+        <div class="car">
+            <h2>Vactaion plans</h2>
+            <h4>Book now and have a blast at tripii.</h4>
+        </div>
+        
+
+    <!-- Change the theme color : <input [(ngModel)]="mycolor" type="text" style="border-radius:40px;margin-top:30px;text-align: center;">
+<p [ngStyle]="{color:mycolor}" style="background-color:#EFEFEF;">You have chosen: {{mycolor}} </p> -->
     <div class="pad">
     
     <div *ngFor="let item of course" style="margin-top: auto; ">
@@ -29,10 +35,13 @@ We can create a function to make a GET request to retrieve users data  -->
                         <div class="col-lg-9" style="margin-top: 30px;">
                               <div class="data" >
                                 {{item.name | uppercase}}
-                                <span [ngClass]="getClass()" (click)="showUserDetailsToggle()"></span>
+                                <br>
+                               
+                                
                             </div>
-                            <div class="data" [hidden]="courseDetail" [ngStyle]="{color:mycolor}">
+                            <div class="data" >
                                 <p>{{item.description | uppercase}}</p>
+                                {{item.stars}}
                                 <hr>
                                 <p>{{item.role|uppercase}}</p>
                                 <br>

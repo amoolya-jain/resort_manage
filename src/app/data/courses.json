@@ -5,6 +5,7 @@
     "description": "with beautiful view",
     "role":"The best memories are made gathered around the table",
     "fees":5000,
+    "stars":"⭐⭐⭐⭐",
     "img": "https://assets.traveltriangle.com/blog/wp-content/uploads/2020/01/Taj-Exotica-Goa_6th-Mar.jpg"
     },
     {
@@ -13,6 +14,7 @@
     "description": "🏖️",
     "role":"seas the day",
     "fees":5000,
+    "stars":"⭐⭐⭐⭐",
     "img":"https://media.cntraveler.com/photos/53dad722dcd5888e145d0d62/master/w_1024,h_768,c_limit/capella-lodge-lord-howe-island-australia-109374-2.jpg"
     }
 ]

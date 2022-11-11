@@ -59,24 +59,28 @@ export class HomeComponent implements OnInit {
       "CourseName": "Beautiful Beach views 🏖️",
       "CourseDescription": "Happiness is a day at the Beach.So book and reserve the places now!!!",
       "Status":"Active",
+      "stars":"⭐⭐⭐⭐",
       "img": "https://media-cdn.tripadvisor.com/media/photo-s/10/19/c1/38/beautiful-beach-views.jpg"
     },
     {
       "CourseName": "Meditation Centre🧘",
       "CourseDescription": "Meditation centres facility comes along with your package to serve the purpose of the vaction ",
       "Status":"Active",
+      "stars":"⭐⭐⭐",
       "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVqoeYStZiVSA_JXJCX8UXWfMTKu05nJhU3zG81ba6PBjnp11Ja8RHU3wEInY9A9uMVoM&usqp=CAU"
     },
     {
       "CourseName": "Camp fire",
       "CourseDescription": "Cold air, dark Night, Warm fire, bright stars. Sounds perfect",
       "Status":"InActive",
+      "stars":"⭐⭐⭐",
       "img":"https://cf.ltkcdn.net/camping/images/orig/243208-1600x1030-types-campfires.jpg"
     },
     {
       "CourseName": "Dinner plans🍜",
       "CourseDescription": "surprise your special one with beautiful dinner plans",
       "Status":"Active",
+      "stars":"⭐⭐⭐⭐",
       "img":"http://www.folomojo.com/wp-content/uploads/2015/02/12/dinnerdate3-r-535x428.jpg"
     },
     
